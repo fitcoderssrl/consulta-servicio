@@ -1,4 +1,4 @@
-# consulta-servicio
+# Consulta RUC, Gratis
 Consulta por el RUC de una empresa.
 
         String apiKey = "PNVn0DEQiy9iKsG7yO7al1c9vjVZBabi1UIhEqAP";
