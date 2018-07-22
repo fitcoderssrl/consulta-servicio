@@ -7,6 +7,7 @@ package com.fitcoders.consulta.ruc.retrofit;
 
 import com.fitcoders.consulta.ruc.model.response.Entity;
 import com.fitcoders.consulta.ruc.model.request.Ruc;
+import com.fitcoders.consulta.ruc.model.response.EntityResponse;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Header;
@@ -29,7 +30,7 @@ public interface ApiConsultaRuc {
         "Accept: application/json"
     })
     @POST("v1/basic")
-    Call<Entity> basic(
+    Call<EntityResponse> basic(
             @Header("x-api-key") String apiKey,
             @Body Ruc requestRuc);
 
@@ -43,7 +44,7 @@ public interface ApiConsultaRuc {
         "Accept: application/json"
     })
     @POST("v1/complete")
-    Call<Entity> complete(
+    Call<EntityResponse> complete(
             @Header("x-api-key") String apiKey,
             @Body Ruc requestRuc);
 }
